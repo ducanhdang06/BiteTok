@@ -1,0 +1,23 @@
+{
+    "name": "BiteTok",
+    "version": "1.0.0",
+    "description": "Full stack web application with Next.js, TypeScript, and Tailwind CSS",
+    "scripts": {
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "server": "cd backend && npm run dev",
+      "client": "cd frontend && npm run dev",
+      "build": "cd frontend && npm run build",
+      "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
+      "install-server": "cd backend && npm install",
+      "install-client": "cd frontend && npm install",
+      "install-all": "npm run install-server && npm run install-client",
+      "lint": "cd frontend && npm run lint",
+      "type-check": "cd frontend && npx tsc --noEmit"
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.2"
+    },
+    "keywords": ["nextjs", "typescript", "tailwind", "fullstack"],
+    "author": "",
+    "license": "ISC"
+  }
